@@ -3,65 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="false">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView android:id="@+id/restaurants_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="15dp"
-            android:text="Restaurants"
-            android:textColor="#ffa500"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:layout_gravity="left"
-            android:clickable="true" />
 
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button One" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Two" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Three" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Four" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Five" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Six" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Seven" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Eight" />
-        <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Button Nine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/restaurants_btn"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:clickable="true"
+            android:src="@drawable/restaurant1" />
+
+        <ImageView
+            android:id="@+id/offers_btn"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:clickable="true"
+            android:src="@drawable/offers" />
+
+        <ImageView
+            android:id="@+id/toprated_btn"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:clickable="true"
+            android:src="@drawable/toprated" />
+
+        <ImageView
+            android:id="@+id/nearby_btn"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:clickable="true"
+            android:src="@drawable/nearby" />
+
+        <ImageView
+            android:id="@+id/trending_btn"
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:clickable="true"
+            android:src="@drawable/trending" />
+
     </LinearLayout>
 </ScrollView>
