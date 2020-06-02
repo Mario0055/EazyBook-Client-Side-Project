@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmBookingActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="75dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textColor="#ff8c00"
+            android:textSize="35dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="#ff8c00"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="#ff8c00"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="#ff8c00"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:text="Booking details">
+    </TextView>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:text="Number of Guests: ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_marginStart="20dp"
+        android:text=""
+        android:textColor="#ff8c00"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Date: ">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#ff8c00"
+        android:text=""
+        android:id="@+id/text2"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:text="Time: ">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#ff8c00"
+        android:text=""
+        android:id="@+id/text3"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="monospace"
+        android:text="Special Request: ">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#ff8c00"
+        android:text=""
+        android:id="@+id/text4"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:background="#ff8c00"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:text="Confirm Booking"/>
+
+</LinearLayout>

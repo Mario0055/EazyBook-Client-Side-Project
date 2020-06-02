@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">EASYBOOK</string>
+    <string name="app_name">EasyBook</string>
+    <string name="username_already_exists">Username already exists</string>
+    <string name="invalid_confirm_password">Password does not match</string>
+    <string name="invalid_password">Enter 6 digit password</string>
+    <string name="invalid_mobile">Please enter a valid number</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="invalid_name">Please enter a valid name</string>
+    <string name="invalid_date">Please enter a valid date</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="empty_date">Please Enter a Date</string>
+    <string name="empty_time">Please Enter a Time</string>
+    <string name="empty_request">Add a Request</string>
+    <string name="empty_number">Enter The Number of Guests</string>
+    <string name="empty_name">Enter Your Full Name</string>
+    <string name="empty_PhoneNumber">Enter Your Phone Number</string>
+    <string name="your_message">Enter the message</string>
+    <string name="button_text">Send</string>
+    <string name="title_activity_second">ConfirmBookingActivity</string>
+
+
 </resources>

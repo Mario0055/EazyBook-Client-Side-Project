@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="407dp"
+            android:layout_height="wrap_content"
+            android:background="#ff8c00"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp"
+            android:text="Book"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttons">
+        <!--Scrollable content here-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/BookingRestaurantCoverImage"
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:onClick="SendImage"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/BookingRestaurantname"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/BookingRestaurantLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp">
+                </TextView>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:textColor="#ff8c00"
+                android:text="Booking Details">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Number of Guests">
+            </TextView>
+
+            <EditText
+                android:id="@+id/guest_no"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Pick a Date">
+            </TextView>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:hint="DD/MM/YYYY"
+                android:focusable="false"
+                android:layout_marginStart="27dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Pick a Time">
+            </TextView>
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="00:00"
+                android:inputType="time"
+                android:focusable="false"
+                android:layout_marginStart="27dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Choose Your Area">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:text="Smoking"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="200dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Add Your Sitting Area">
+            </TextView>
+            <EditText
+                android:id="@+id/special_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:layout_marginStart="27dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:textColor="#ff8c00"
+                android:text="User Details"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Full Name">
+            </TextView>
+
+            <EditText
+                android:id="@+id/BookingActivityGuestName"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Phone Number">
+            </TextView>
+            <EditText
+                android:id="@+id/BookingActivityGuestPhoneNumber"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:layout_marginStart="27dp"
+                android:background="@drawable/edit_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:textColor="#ff8c00"
+                android:text="Menu">
+            </TextView>
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="10dp">
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp">
+
+
+                   <ImageView
+                       android:id="@+id/menu1_btn"
+                       android:layout_width="228dp"
+                       android:layout_height="300dp"
+                       android:src="@drawable/menu1" />
+
+                   <ImageView
+                       android:id="@+id/menu2_btn"
+                       android:layout_width="215dp"
+                       android:layout_height="300dp"
+                       android:src="@drawable/menu2" />
+
+                   <ImageView
+                       android:id="@+id/menu3_btn"
+                       android:layout_width="228dp"
+                       android:layout_height="300dp"
+                       android:src="@drawable/menu3" />
+
+
+               </LinearLayout>
+           </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#ff8c00"
+                android:textSize="27dp"
+                android:text="Details">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:text="Facilities:">
+            </TextView>
+                <TextView
+                    android:id="@+id/BookingRestaurantDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Contact Number:">
+                </TextView>
+                <TextView
+                    android:id="@+id/BookingRestaurantPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:textColor="#ff8c00"
+                android:text="Reviews">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Review "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Restaurant mlhosh 7al abn fagra "
+                    android:id="@+id/RestaurantReview1"/>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Review "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:text="Restaurant mlhosh 7al abn fagra "
+                    android:id="@+id/RestaurantReview2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/orange"
+                android:text="Add Your Review">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="27dp"
+                    android:textSize="20dp"
+                    android:text="Review "
+                    android:id="@+id/ReviewText"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginStart="27dp"
+                    android:id="@+id/RestaurantReview"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="27dp">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:ems="9"
+                    android:paddingLeft="10dp"
+                    android:hint="Your Review Matters!"
+                    android:background="@drawable/edit_text"
+                    android:id="@+id/ReviewInputEditText"/>
+                <Button
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD"
+                    android:textSize="15dp"
+                    android:id="@+id/BookingRestaurantSendReviewButton"
+                    android:background="#ff8c00"
+                    android:textColor="#FFFFFFFF"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
